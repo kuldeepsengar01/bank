@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank portal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!--open account-->
+   <div class="container">
+    <h4>Welcome to Kuldeep Bank</h4>
+      <button class="btn btn-dark btn1">Open account</button>
+      <button class="btn btn-info btn2">Deposit Money</button>
+      <button class="btn btn-success btn3">Withdraw Money</button>
+      <button class="btn btn-warning btn4">Show Your Detail</button>
+   </div>
+
+   <!--open account form-->
+   
+   <div class="container container1">
+     <h4>Open Account</h4>
+     <input type="text" class="form-control" id="uname" placeholder="Enter your Name">
+     <input type="text" class="form-control" id="ufname" placeholder="Enter your Father Name">
+     <input type="text" class="form-control" id="umname" placeholder="Enter your Mother Name">
+     <input type="number" class="form-control" id="adhar" placeholder="Enter your Adhar Number">
+     <input type="number" class="form-control" id="uincome" placeholder="Enter Money to Open Account">
+     <input type="text" class="form-control" id="email" placeholder="Enter your Email ID">
+     <input type="number" class="form-control" id="mobile" placeholder="Enter your Mobile Number">
+     <input type="number" class="form-control" id="captcha" placeholder="Enter Captcha Number">    
+     <h6 id="capt"></h6>
+      <button class="btn btn-primary" id="submit">Submit</button><br>
+     <h5 id="heading"></h5>
+     <button class="btn btn-primary" id="back">Back</button>
+     
+   </div>
+
+   <!--deposit form-->
+   
+   <div class="container container2">
+     <h4>Deposit Money</h4>
+     <input type="number" class="form-control" id="accno" placeholder="Enter Account Number">
+     <input type="number" class="form-control" id="deposit1" placeholder="Enter Money to Deposit">
+     <p id="succes"></p>
+     <h4 id="head"></h4>
+     <button class="btn btn-primary" id="deposit">Deposit Money</button><br>
+     <button class="btn btn-primary" id="back1">Back</button>
+   </div>
+
+   <!--withdraw form-->
+   
+   <div class="container container3">
+     <h4>Withdraw Money</h4>
+     <input type="number" class="form-control" id="accno" placeholder="Enter Account Number">
+     <input type="number" class="form-control" id="withd" placeholder="Enter Money to Withdraw">
+      <p id="succes1"></p>
+     <h4 id="head1"></h4>
+     <button class="btn btn-success" id="withdraw">Withdraw Money</button><br>
+     <button class="btn btn-primary" id="back2">Back</button>
+   </div>
+
+  <!--show detais-->
+  <div class="container container4">
+    <h4>Your Detail</h4>
+    <p class="name"></p>
+    <p class="fname"></p>
+    <p class="mname"></p>
+    <p class="adhar"></p>
+    <p class="mobile"></p>
+    <p class="email"></p>
+    <h4 class="accno34"></h4>
+    <h3 class="blc"></h3>
+    <button class="btn btn-dark" id="back3">Back</button>
+  </div>
+<script src="script.js"></script>   
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>    
+</body>
+</html>
